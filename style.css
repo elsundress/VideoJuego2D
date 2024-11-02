@@ -1,0 +1,37 @@
+html, body {
+    height: 100%; /* Para que el body ocupe toda la altura de la página */
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+
+body {
+    background: url('assets/cancha.png') no-repeat center center fixed; /* Fondo que cubre toda la página */
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+}
+
+#gameCanvas {
+    border: 1px solid #000;
+    display: block;
+    margin: 20px auto; /* Centrar el canvas y dar un margen */
+}
+
+#score {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#instructions {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Estilo del cursor personalizado */
+#customCursor {
+    position: absolute;
+    width: 20px; /* Tamaño del cursor */
+    height: 20px; /* Tamaño del cursor */
+    background-color: rgba(0, 0, 255, 0.5); /* Color y transparencia */
+    border-radius: 50%; /* Hace que el cursor tenga forma de círculo */
+    pointer-events: none; /* Permite que el cursor no bloquee clics en el canvas */
+    transition: transform 0.1s ease; /* Suaviza el movimiento */
+}
